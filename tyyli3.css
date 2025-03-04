@@ -1,0 +1,297 @@
+/* Yleiset tyylit */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #2C3E50;
+    color: #DED7C7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* Ylätunniste */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2C3E50;
+}
+
+nav a {
+    color: #DED7C7;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #5B4B3F;
+    background-color: #DED7C7;
+    border-radius: 5px;
+}
+
+#valittu {
+    color: #5B4B3F;
+    /* Tekstin väri */
+    background-color: rgba(255, 235, 205, 0.6);
+    /* Läpikuultava taustaväri */
+    border-radius: 5px;
+    /* Pyöristetyt kulmat */
+    padding: 1px 10px;
+    /* Lisää tilaa ympärille */
+}
+
+/* Hero-osio */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.0);
+    padding: 10px;
+    color: #DED7C7;
+    text-shadow: 2px 2px 4px rgba(5, 10, 48, 0.926);
+
+}
+
+
+
+
+.intro-text {
+    font-size: 30px;
+}
+
+/* Painike */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    background-color: #5B4B3F;
+    color: #DED7C7;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    max-width: fit-content;
+
+
+}
+
+.button-container {
+    text-align: center;
+    /* Keskittää sisällön vaakasuunnassa */
+}
+
+/* Koristeviiva */
+hr.divider {
+    border: 0;
+    height: 2px;
+    background-color: #DED7C7;
+    margin: 20px 30px;
+    /* Lisää väliä viivan ja muiden osioiden väliin */
+}
+
+/* Kuvakortit */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5%;
+}
+
+.card img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+.card .text {
+    flex: 1;
+}
+
+.card h2 {
+    margin-bottom: 0px;
+}
+
+.card p {
+    margin-top: 50;
+}
+
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+
+/* Alatunniste */
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #5B4B3F;
+
+}
+
+footer>h3 {
+    margin: 0 20px 10px 0;
+    font-size: 1.2em;
+}
+
+footer>p {
+    margin: 0 20px 20px 0;
+    flex-basis: 100%;
+
+}
+
+footer>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p:last-child {
+    width: 100%;
+    text-align: center;
+
+}
+
+footer a:hover {
+    color: #5B4B3F;
+    background-color: #DED7C7;
+    border-radius: 5px;
+}
+
+/* Mobiiliversio (max-width: 600px) */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        /* Tekstin koon pienentäminen mobiililaitteilla */
+        padding: 0 10px;
+    }
+}
+
+header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    margin: 10px 0;
+}
+
+.hero-text {
+    font-size: 30px;
+    /* Pienennetään tekstin kokoa */
+    padding: 5px;
+}
+
+.content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card {
+    flex-direction: column;
+    padding: 10px 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.reverse {
+    flex-direction: column;
+}
+
+.button {
+    font-size: 24px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    padding-bottom: 40px;
+}
+
+footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+footer>div {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+footer p:last-child {
+    margin-top: 20px;
+}
+
+footer h3 {
+    font-size: 1.1em;
+}
+
+/*  kuvan koon muuttaminen. */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.kartta-container {
+    text-align: center;
+    /* Vaakasuuntainen keskitys */
+}
+
+.kartta-container iframe {
+    margin: 0 auto;
+    /* Pystysuuntainen keskitys */
+}
