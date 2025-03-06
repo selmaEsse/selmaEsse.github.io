@@ -92,6 +92,11 @@ nav a:hover {
     padding: 5px 15px;
     /* Pienentää solujen väliä */
     text-align: center;
+    font-size: 25px;
+}
+
+.aukioloajat th {
+    font-size: 27px;
 }
 
 .aukioloajat tr {
