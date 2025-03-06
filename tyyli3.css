@@ -85,7 +85,6 @@ nav a:hover {
     width: 50%;
     margin: 0 auto;
     border-collapse: collapse;
-    /* Poistaa solujen välin */
 }
 
 
@@ -102,7 +101,7 @@ nav a:hover {
 
 .aukioloajat tr {
     display: flex;
-    /* Käytetään flexboxia riville */
+    /* Flexbox riville */
     justify-content: center;
 }
 
@@ -185,12 +184,10 @@ hr.divider {
 
 .contact-info a {
     color: #DED7C7;
-    /* Aseta haluamasi väri sähköpostille */
 }
 
 .contact-info p:nth-child(3) {
     color: #DED7C7;
-    /* Aseta haluamasi väri puhelinnumerolle */
 }
 
 
