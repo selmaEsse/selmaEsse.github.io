@@ -65,17 +65,25 @@ nav a:hover {
 
 }
 
-table {
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0px;
+.aukioloajat {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    /* Poistaa solujen välin */
 }
 
-th {
-    padding-right: 100px;
+
+.aukioloajat td {
+    padding: 5px 15px;
+    /* Pienentää solujen väliä */
+    text-align: center;
 }
 
+.aukioloajat tr {
+    display: flex;
+    /* Käytetään flexboxia riville */
+    justify-content: center;
+}
 
 .intro-text {
     font-size: 30px;
