@@ -47,13 +47,11 @@ nav a:hover {
 
 #valittu {
     color: #5B4B3F;
-    /* Tekstin väri */
     background-color: rgba(255, 235, 205, 0.6);
     /* Läpikuultava taustaväri */
     border-radius: 5px;
     /* Pyöristetyt kulmat */
     padding: 1px 10px;
-    /* Lisää tilaa ympärille */
 }
 
 /* Hero-osio */
