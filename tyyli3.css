@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 2px;
     background-color: #2C3E50;
 }
 
@@ -183,6 +183,15 @@ hr.divider {
     flex-direction: row-reverse;
 }
 
+.contact-info a {
+    color: #DED7C7;
+    /* Aseta haluamasi väri sähköpostille */
+}
+
+.contact-info p:nth-child(3) {
+    color: #DED7C7;
+    /* Aseta haluamasi väri puhelinnumerolle */
+}
 
 
 
