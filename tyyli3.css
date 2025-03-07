@@ -74,7 +74,7 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.0);
     padding: 10px;
     color: #DED7C7;
-    text-shadow: 2px 2px 4px rgba(5, 10, 48, 0.926);
+    text-shadow: 10px 10px 10px rgba(5, 10, 48, 0.926);
 
 }
 
