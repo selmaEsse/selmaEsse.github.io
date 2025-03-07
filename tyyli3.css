@@ -346,3 +346,10 @@ footer a:hover {
         /* Pystysuuntainen keskitys */
     }
 }
+
+/*mobiilikossa järjestin hero tekstiä että teksti muokkautuu näytön pienennessä*/
+@media (max-width: 450px) {
+    .hero-text {
+        width: 80%;
+    }
+}
