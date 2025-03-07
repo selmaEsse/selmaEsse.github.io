@@ -10,6 +10,7 @@ body {
 
 h1 {
     font-size: 35px;
+    padding: 0 15px;
 }
 
 h2 {
@@ -259,9 +260,7 @@ footer a:hover {
         padding: 15px;
     }
 
-    nav a {
-        margin: 10px 0;
-    }
+
 
     .hero-text {
         font-size: 20px;
