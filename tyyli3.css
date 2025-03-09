@@ -28,7 +28,9 @@ p {
 }
 
 .text p {
-    font-size: 19px !important
+    font-size: 19px !important;
+    padding: 0;
+
 }
 
 /* Ylätunniste */
@@ -180,6 +182,7 @@ hr.divider {
 
 .card p {
     margin-top: 20px;
+
 }
 
 
@@ -198,7 +201,7 @@ hr.divider {
 
 
 
-/* Alatunniste */
+/* Alatunniste footer  */
 footer a {
     text-decoration: none;
     color: inherit;
@@ -242,7 +245,7 @@ footer a:hover {
     border-radius: 5px;
 }
 
-/* Mobiiliversio (max-width: 1000px) jotta header teksti pysyy samana koona */
+/* Mobiiliversio (max-width: 1000px) */
 @media (max-width:1000px) {
     .hero-text {
         font-size: 30px;
@@ -353,9 +356,151 @@ footer a:hover {
     }
 }
 
-/*mobiilikossa järjestin hero tekstiä että teksti muokkautuu näytön pienennessä*/
+/* index pääotsikon tarkennus pienenssä jotta ei tule glitchiä ja ei mene kuvan yli*/
 @media (max-width: 450px) {
     .hero-text {
         width: 80%;
     }
+}
+
+.subpage-content {
+    background-color: rgb(255, 248, 239);
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+
+.introduction {
+    padding-left: 20px;
+}
+
+/*päävalikko*/
+
+nav a:hover {
+    color: rgba(87, 54, 4);
+    background-color: whitesmoke;
+}
+
+table {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    color: black;
+
+}
+
+th {
+    padding-right: 100px;
+    color: black;
+    font-size: 25px;
+
+}
+
+#kartta {
+    padding: 20px;
+    max-width: 90%;
+}
+
+.ota-yhteytta {
+    margin-bottom: 0;
+    display: flex;
+    padding: 0;
+    color: black;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 0;
+    text-align: left;
+
+}
+
+/*mobiilikoko*/
+@media (max-width: 600px) {
+
+    .subpage-content {
+        margin: 3% 10% 3% 10%;
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 18px;
+    }
+
+}
+
+/*tablettikoko*/
+@media screen and (min-width: 600px) {
+
+    .subpage-content {
+        margin: 3% 10% 3% 10%;
+        flex-direction: column;
+
+    }
+
+    table {
+        font-size: 20px;
+    }
+
+}
+
+/*suuri näyttö*/
+@media screen and (min-width: 1200px) {
+
+    .subpage-content {
+        margin: 3% 15% 3% 15%;
+        flex-direction: row;
+        padding-bottom: 70px;
+        padding-top: 50px;
+    }
+
+}
+
+/*responsiivisuus kartalle ja kartan tekstille*/
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+
+    #kartta {
+
+        display: flex;
+    }
+
+    .subpage-content {
+        margin: 3% 10% 3% 10%;
+        flex-direction: column;
+        width: max-content;
+        margin: 70px auto 70px auto;
+    }
+
+}
+
+/*responsiivisuus kartalle ja kartan tekstille jotta pienenee näytön pienennesä*/
+@media screen and (max-width: 599px) {
+
+    #kartta {
+
+        display: flex;
+    }
+
+    .subpage-content {
+        margin: 3% 10% 3% 10%;
+        flex-direction: column;
+        width: auto;
+        margin: 70px auto 70px auto;
+    }
+
+}
+
+/*erikoistunut css info otikoon*/
+.for-you {
+    display: block;
+    font-size: 35px;
+    color: whitesmoke;
+    text-shadow: 4px 4px black;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*erikoistunut css info alaotsikkoon jotta saadaan tilaa kartan ja tekstin välille*/
+.tervetuloa {
+    padding-bottom: 70px;
 }

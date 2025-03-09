@@ -4,66 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tietoa - Lumou Spa</title>
+    <title>Lumou Spa</title>
     <link rel="stylesheet" href="tyyli3.css">
 </head>
 
 <body>
-    <!-- Ylätunniste Header -->
-
     <header>
         <h1>Lumou Spa</h1>
         <nav>
-            <a href="index.html">Spa</a>
+            <a href="index.html" id="valittu">Spa</a>
             <a href="palvelut.html">Palvelut</a>
-            <a href="info.html" id="valittu">Info</a>
+            <a href="info.html">Info</a>
+
         </nav>
+
     </header>
 
-    <!-- Yhteystiedot -->
-    <section class="content">
-        <h2>Lumou Spa on täydellinen paikka rentoutumiseen ja itsesi hemmotteluun.</h2>
+    <strong class=" for-you">Lumou Spa on täydellinen paikka rentoutumiseen ja itsesi hemmotteluun</strong>
+    <div class="subpage-content">
 
-        <!--Aukioloajat-->
-        <div class="info-container">
-            <table class="aukioloajat">
+        <div style="overflow-x: auto" class="introduction">
+            <table>
                 <tr>
                     <th colspan="2">Olemme auki</th>
+
                 </tr>
+
                 <tr>
                     <td>Ma-pe</td>
                     <td>9-18</td>
                 </tr>
                 <tr>
                     <td>La-su</td>
-                    <td>10-18</td>
+                    <td>12-19</td>
                 </tr>
             </table>
-            <br>
+
+            <table>
+                <tr>
+                    <p class="ota-yhteytta"> Ota yhteyttä kysymyksissä tai ajanvarauksessa. </p>
+
+                </tr>
+                <tr>
+                    <td>+358 44 123 4567</td>
+                </tr>
+                <tr>
+                    <td><a href="mailto:spa@lumou.fi">spa@lumou.fi</a>
+                </tr>
+
+                <tr>
+                    <td>Helsiginkatu 15 A, 00100 Helsinki</td>
+                </tr>
+            </table>
         </div>
-
-        <h3>Jos sinulla on kysyttävää tai haluat varata ajan, ota yhteyttä:</h3>
-
-        <div class="contact-info">
-            <p><strong>Osoite:</strong> Helsinginkatu 15 A, 00100 Helsinki</p>
-            <p><strong>Sähköposti:</strong> <a href="mailto:spa@lumou.fi">spa@lumou.fi</a></p>
-            <p><strong>Puhelin:</strong> +358 44 123 4567</p>
-        </div>
-
-        <h3>Sijaintimme</h3>
-
-        <div class="kartta-container">
-            <iframe id="kartta"
+        <div>
+            <iframe id=kartta
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.1993029166813!2d24.945943677287315!3d60.1809074495206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692096fb0dfb5b1%3A0x7f568ad44ac9f40d!2sHelsinginkatu%2015%2C%2000100%20Helsinki!5e0!3m2!1sfi!2sfi!4v1709040000000"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <h3>Tervetuloa nauttimaan rentoutumisesta!</h3>
-    </section>
 
-
-    <!-- Alatunniste footer  -->
-
+    </div>
+    <h3 class="tervetuloa">Tervetuloa nauttimaan rentoutumisesta!</h3>
+    <!-- Alatunniste,footer etusivulle-->
     <footer>
         <div>
             <h3><a href="index.html">Lumou Spa</a></h3>
